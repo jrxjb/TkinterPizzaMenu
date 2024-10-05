@@ -34,27 +34,7 @@ tipo: {mostrar2}
 con {mostrar3} adicional
 1 bebida {mostrar4} sabor {mostar5}
 para {mostrar6}""")
-"""
-def seleccionar2():
-    valor2 = lista2.curselection()# curselection es el nombre predeterminado para agarrar el valor 
-    print (valor2)
-    mostrar2 = lista2.get(valor2[0])
-    #for elemento2 in valor2:
-     #   print(lista2.get(elemento2))
     
-    etiqueta.config(text="Seleccion:{}".format(mostrar2)) 
-
-
-def seleccionar3():
-    valor3 = lista3.curselection()# curselection es el nombre predeterminado para agarrar el valor 
-    print (valor3)
-    mostrar3 = lista3.get(valor3[0])
-    #for elemento2 in valor2:
-     #   print(lista2.get(elemento2))
-    
-    etiqueta.config(text="Seleccion:{}".format(mostrar3)) 
-"""
-
 root =Tk()
 
 img=Image.open("pizza3.jpg")
@@ -76,10 +56,6 @@ etiquetaTamaño=Label(etiquetaROOT)
 etiquetaTamaño.config(width=0,height=15,bg="grey10")
 etiquetaTamaño.grid(row=4)
 
-######
-#etiqueta boton seleccion
-
-#img=ImageTk.PhotoImage(img)
   ################################  Pizza ################################
 ###Cuadro Pizza
 pizza=Label(etiquetaROOT,image=img2)
@@ -133,7 +109,7 @@ titulo2.grid(row=0,column=0)
 #boton2=Button(cuadro2,text="seleccionar",command=seleccionar2)
 #boton2.grid()
 
-###### cuadro 3
+###### cuadro 3 #####
 
 cuadro3=Label(pizza)
 cuadro3.config(width=10,height=10,bg="red",border=2,relief="solid",fg="red")
@@ -148,9 +124,6 @@ lista3.grid(row=1,column=0)
 titulo3=Label(cuadro3)
 titulo3.config(text="Adicional",width=25,height=1,bg="red")
 titulo3.grid(row=0,column=0)
-
-""" boton3=Button(cuadro3,text="seleccionar",command=seleccionar3)
-boton3.grid() """
 
  ################################   Bebida ################################
 ###Cuadro Bebida
@@ -177,10 +150,6 @@ selectborderwidth=3)
 listaB.insert(0,*elementosB)
 listaB.grid(row=1,column=0)
 #### boton 
-#lista.config(selectmode=EXTENDED,selectbackground="green",selectforeground="white",
-#selectborderwidth=3,width=20,height=8,bg="azure2"
-#botonB1=Button(cuadro1Bebida,text="seleccionar",command=seleccionar3)
-#botonB1.grid()
 
 tituloTaB=Label(cuadro1Bebida)
 
@@ -208,15 +177,10 @@ elementosB2={"Te","Coca-cola","Colita","Pepsi"}
 listaB2= Listbox(cuadroTB,exportselection=0)
 listaB2.config(width=20,height=7,selectmode=EXTENDED,selectborderwidth=3,
 bg="azure2",selectforeground="black",selectbackground="white") 
-#listaB.config(width=20,height=7,selectmode=EXTENDED,selectbackground="green",selectforeground="white",
-#selectborderwidth=3)
+
 listaB2.insert(0,*elementosB2)
 listaB2.grid(row=1,column=0)
-""" listaB= Listbox(cuadro1Bebida)
-listaB.config(width=10,height=10,selectmode=EXTENDED)
-listaB.insert(0,*elementosB)
-listaB.grid(row=1,column=0)
- """
+
 
 #cuadro 3 en bebida 
 cuadro3Llevar = Label(bebida)
