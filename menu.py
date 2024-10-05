@@ -9,8 +9,6 @@ def seleccionar():
     print (valor)
     mostrar = lista.get(valor[0])
     
-#    for elemento in valor:
-#        print(lista.get(elemento)) #creo q con una lista podrias mostrar todo
     valor2 = lista2.curselection()
     mostrar2 = lista2.get(valor2[0])
     #boton 2
@@ -106,8 +104,6 @@ lista2.grid(row=1,column=0)
 titulo2=Label(cuadro2)
 titulo2.config(text="Tipo",width=25,height=1,bg="old lace")
 titulo2.grid(row=0,column=0)
-#boton2=Button(cuadro2,text="seleccionar",command=seleccionar2)
-#boton2.grid()
 
 ###### cuadro 3 #####
 
