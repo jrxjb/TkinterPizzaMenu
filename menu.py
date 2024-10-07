@@ -126,6 +126,7 @@ titulo3.grid(row=0,column=0)
 bebida=Label(etiquetaROOT,image=img2)
 bebida.config(width=10,height=10)
 bebida.grid(row=1,column=0)
+
 #### titulo bebida
 
 tituloBebida=Label(bebida)
@@ -151,7 +152,7 @@ tituloTaB=Label(cuadro1Bebida)
 
 tituloTaB.config(text="Tamaño",width=25,height=1,bg="green")
 tituloTaB.grid(row=0,column=0)
-### cuadro tipo de ebebida 
+### cuadro tipo de bebida 
 
 
 ### cuadro 2##### bebida
